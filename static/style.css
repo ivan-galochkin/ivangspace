@@ -1,0 +1,85 @@
+@font-face {
+    font-family: 'Fira Code', monospace;
+    src: url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&display=swap');
+}
+
+.topnav {
+    background-color: black;
+    overflow: hidden;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.topnav li {
+    display: inline;
+    float: left;
+}
+
+
+.typewriter {
+    border-right: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    color: rgba(255, 255, 255, .70);
+    right: 10px;
+}
+
+.typewriter {
+    animation: animated-text 1s steps(17, end) 1s 1 normal both;
+}
+
+@keyframes animated-text {
+    from {
+        width: 0;
+    }
+    to {
+        width: 230px;
+    }
+}
+
+@keyframes text_visible {
+    0% {
+        color: transparent;
+    }
+    60% {
+        color: transparent;
+    }
+    100% {
+        color: white;
+    }
+}
+
+
+.page {
+    background: black;
+}
+
+.page_header {
+    background: black;
+}
+
+.header {
+    color: white;
+    font-family: "Fira Code", monospace;
+    animation: text_visible 3.2s steps(70, end);
+
+}
+.header_moving {
+    color: white;
+    font-family: "Fira Code", monospace;
+}
+
+.header_underlined {
+    color: white;
+    font-family: "Fira Code", monospace;
+    animation: text_visible 3.2s steps(70, end);
+    text-decoration: underline;
+}
+
+.topnav a:link {
+    color: transparent;
+}
+.topnav h1:hover {
+    color: forestgreen;
+}
